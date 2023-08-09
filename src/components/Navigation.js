@@ -19,9 +19,15 @@ const slide = {
 function Navigation() {
   return (
     <Nav as={motion.nav} variants={slide} initial="hidden" animate="visible">
-      <Button>info</Button>
-      <Button>projects</Button>
-      <Button>courses</Button>
+      <a href="#info">
+        <Button>info</Button>
+      </a>
+      <a href="#projects">
+        <Button>projects</Button>
+      </a>
+      <a href="#courses">
+        <Button>courses</Button>
+      </a>
     </Nav>
   );
 }

@@ -47,6 +47,7 @@ const childVar = {
 function Info() {
   return (
     <FlexColRow
+      id="info"
       as={motion.div}
       variants={parent}
       initial="hidden"

@@ -20,7 +20,7 @@ const child = {
 
 function Projects() {
   return (
-    <FlexCol>
+    <FlexCol id="projects">
       <motion.div variants={child} initial="hidden" whileInView="visible">
         <Header $size="lg" $variant="secondary">
           PROJECTS{" "}

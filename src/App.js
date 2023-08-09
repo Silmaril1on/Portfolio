@@ -7,6 +7,7 @@ import Socials from "./components/Socials";
 import Time from "../src/components/Time";
 import Info from "./components/info/Info";
 import Projects from "./components/projects/Projects";
+import Courses from "./components/courses/Courses";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Dark>
         <Info />
         <Projects />
+        <Courses />
         <Time />
         <Navigation />
         <Socials />

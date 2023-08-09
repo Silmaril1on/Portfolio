@@ -34,3 +34,12 @@ html {
 ::-webkit-scrollbar-track {
   background-color: #101010;
 }
+
+@font-face {
+  font-family: "semplicitapro";
+  src: url(../src/fonts/SemplicitaPro-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "semplicitapro";
+  src: url(../src//fonts/SemplicitaPro.otf) format("opentype");
+}

@@ -39,14 +39,13 @@ $nanum: nanum pen script;
   .card-image-div {
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    box-shadow: 10px 0 20px #ccccccad;
+    box-shadow: 10px 0 20px #686262;
     height: 200px;
     left: 0;
     position: absolute;
     overflow: hidden;
     width: 220px;
     @media screen and (min-width: 1200px) {
-      box-shadow: 20px 0 30px #ccccccad;
       height: 100%;
       width: 350px;
     }
