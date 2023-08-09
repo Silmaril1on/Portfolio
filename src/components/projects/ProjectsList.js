@@ -77,7 +77,7 @@ function ProjectsList() {
             variants={parentVariant}
             initial="hidden"
             whileInView={"visible"}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="project-card"
             key={index}
           >
