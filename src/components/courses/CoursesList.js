@@ -37,7 +37,7 @@ function CoursesList() {
               return (
                 <div key={index} className="course-links">
                   <img src={course.logo} alt="course" />
-                  <a href={course.link} target="_blank">
+                  <a href={course.link} rel="noreferrer" target="_blank">
                     {course.name}
                   </a>
                 </div>
