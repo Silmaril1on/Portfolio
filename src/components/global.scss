@@ -1,0 +1,24 @@
+/* social icons slide */
+.fixed-icons {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 25px;
+  bottom: 30px;
+  height: auto;
+  left: 20px;
+  padding: 5px;
+  position: fixed;
+  transition: 0.3s linear;
+  width: auto;
+}
+
+.hide-icons {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 25px;
+  bottom: 30px;
+  height: auto;
+  left: -44px;
+  padding: 5px;
+  position: fixed;
+  transition: 0.3s linear;
+  width: auto;
+}

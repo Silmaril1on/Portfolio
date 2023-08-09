@@ -1,0 +1,111 @@
+$primary: #ccc;
+$secondary: rgba(78, 134, 197, 1.74);
+$react: #28bfbd;
+$javascript: #dec526;
+$html: #de4126;
+$css: #385ad1;
+$nanum: nanum pen script;
+
+.project-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+  }
+}
+
+.project-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  margin: 5px;
+  position: relative;
+  width: 300px;
+  @media screen and (min-width: 1200px) {
+    height: 300px;
+    margin: 50px;
+    width: 500px;
+  }
+
+  .card-image-div {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 10px 0 20px #ccccccad;
+    height: 200px;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    width: 220px;
+    @media screen and (min-width: 1200px) {
+      box-shadow: 20px 0 30px #ccccccad;
+      height: 100%;
+      width: 350px;
+    }
+    img {
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      height: 100%;
+      object-fit: cover;
+      object-position: -20px;
+      transition: 0.3s ease-in;
+      width: 100%;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .project-content {
+    align-items: center;
+    border-radius: 40px;
+    background-color: rgba(46, 44, 44, 0.945);
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    @media screen and (min-width: 1200px) {
+      height: 200px;
+      width: 280px;
+    }
+
+    h1 {
+      padding: 5px;
+    }
+
+    a {
+      align-items: center;
+      color: #ccc;
+      display: flex;
+      font: normal 1rem $nanum;
+      justify-content: center;
+      padding: 0;
+      width: 150px;
+      @media screen and (min-width: 1200px) {
+        font-size: 1.5rem;
+        padding: 5px;
+        width: auto;
+      }
+
+      &:hover {
+        color: white;
+      }
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+}

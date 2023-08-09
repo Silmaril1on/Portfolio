@@ -1,0 +1,138 @@
+$primary: #ccc;
+$secondary: rgba(78, 134, 197, 1.74);
+$react: #28bfbd;
+$javascript: #dec526;
+$html: #de4126;
+$css: #385ad1;
+$nanum: nanum pen script;
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  max-width: 315px;
+  overflow: hidden;
+
+  .info-links {
+    align-items: center;
+    color: $primary;
+    display: flex;
+    flex-direction: row;
+    font: normal 1.3rem nanum pen script;
+    letter-spacing: 1px;
+    margin: 5px;
+    transition: 0.3s;
+
+    &:hover {
+      color: $secondary;
+    }
+
+    span {
+      align-items: center;
+      display: flex;
+      font-size: 20px;
+      margin-right: 5px;
+    }
+
+    a {
+      color: $primary;
+      text-decoration: none;
+      transition: 0.3s;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.image-section {
+  display: flex;
+  justify-content: right;
+  padding: 5px;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    justify-content: center;
+  }
+
+  .image-div {
+    border-radius: 75px;
+    height: auto;
+    margin-right: 30px;
+    width: 200px;
+
+    @media screen and (min-width: 1200px) {
+      height: 600px;
+      width: auto;
+    }
+
+    img {
+      border-radius: 180px;
+      filter: saturate(0.5);
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .animated-icons {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+
+    h1 {
+      bottom: 100px;
+      background-clip: text;
+      padding: 10px;
+      background: linear-gradient(180deg, purple, violet, goldenrod, $react);
+      color: #ccc;
+      font: normal 2rem $nanum;
+      text-transform: capitalize;
+      position: absolute;
+      right: -50px;
+      width: 100px;
+      -webkit-background-clip: text;
+    }
+
+    div {
+      height: 35px;
+      position: absolute;
+      width: 35px;
+
+      &:nth-child(1) {
+        top: -40px;
+        left: 200px;
+        color: $react;
+      }
+      &:nth-child(2) {
+        bottom: 250px;
+        left: -45px;
+        color: $css;
+      }
+      &:nth-child(3) {
+        top: 10px;
+        right: 20px;
+        color: $javascript;
+      }
+      &:nth-child(4) {
+        top: 110px;
+        left: -35px;
+        color: $html;
+      }
+      &:nth-child(5) {
+        top: 200px;
+        right: 15px;
+        color: #ccc;
+      }
+
+      svg {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+}

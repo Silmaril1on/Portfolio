@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { FlexColumn, Dark } from "./components/GlobalStyles";
+import Video from "./components/Video";
+import Navigation from "./components/Navigation";
+import Socials from "./components/Socials";
+import Time from "../src/components/Time";
+import Info from "./components/info/Info";
+import Projects from "./components/projects/Projects";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FlexColumn>
+      <Video />
+      <Dark>
+        <Info />
+        <Projects />
+        <Time />
+        <Navigation />
+        <Socials />
+      </Dark>
+    </FlexColumn>
   );
 }
 
