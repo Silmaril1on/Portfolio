@@ -51,7 +51,7 @@ function Contact() {
             key={index}
           >
             <span>{item.image}</span>
-            <a href={item.link} target="_blank">
+            <a href={item.link} target="_blank" rel="noreferrer">
               {item.name}
             </a>
           </motion.div>

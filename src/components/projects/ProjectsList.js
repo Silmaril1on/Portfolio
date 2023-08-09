@@ -82,7 +82,7 @@ function ProjectsList() {
             key={index}
           >
             <div className="card-image-div">
-              <img src={item.image} alt="image" />
+              <img src={item.image} alt="project-photo" />
             </div>
 
             <motion.div variants={childVariant} className="project-content">

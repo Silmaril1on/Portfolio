@@ -109,7 +109,7 @@ function Avatar() {
       animate="visible"
     >
       <motion.div className="image-div" variants={image}>
-        <img src={avatar} alt="image" />
+        <img src={avatar} alt="myAvatar" />
       </motion.div>
       <div className="animated-icons">
         <motion.div variants={first}>
